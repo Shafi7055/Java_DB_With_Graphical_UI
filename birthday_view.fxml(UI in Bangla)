@@ -1,0 +1,18 @@
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="BirthdayController" hgap="10" vgap="10">
+    <Label text="নাম:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="জন্ম তারিখ:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <DatePicker fx:id="datePicker" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Button text="যোগ করুন" onAction="#addBirthday" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="আপডেট করুন" onAction="#updateBirthday" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Button text="মুছুন" onAction="#deleteBirthday" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+    <Label text="সার্চ নাম/মাস:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="searchField" onKeyReleased="#searchBirthdays" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <TableView fx:id="birthdayTable" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="4">
+        <!-- TableColumns defined in controller -->
+    </TableView>
+</GridPane>
