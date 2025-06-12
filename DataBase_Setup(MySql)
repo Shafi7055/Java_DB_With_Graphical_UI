@@ -1,0 +1,9 @@
+CREATE DATABASE birthday_manager;
+
+USE birthday_manager;
+
+CREATE TABLE birthdays (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    birthdate DATE
+);
